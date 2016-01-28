@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		</tr>
 		<tr>
 			<td>
-				<textarea cols="50" rows="7" placeholder="Descripcion"></textarea>			
+				<textarea name="product_description" cols="50" rows="7" placeholder="Descripcion"></textarea>			
 			</td>
 		</tr>
 		<tr>
@@ -48,10 +48,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<?php
 		for($i=0; $i<count($list_products); $i++)
 		{?>
-			<td><?php echo ($i+1) ?></td>
-			<td><?php echo $list_products[$i]['product_code']?></td>
-			<td><?php echo $list_products[$i]['product_name']?></td>
-			<td><?php echo $list_products[$i]['product_description']?></td>
+			<tr>
+				<td><?php echo ($i+1) ?></td>
+				<td><?php echo $list_products[$i]['product_code']?></td>
+				<td><?php echo $list_products[$i]['product_name']?></td>
+				<td><?php echo $list_products[$i]['product_description']?></td>
+			</tr>
 		<?php
 		}
 		?>
