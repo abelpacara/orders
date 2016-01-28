@@ -3,3 +3,4 @@
 3. administrar inventario de producto
 4. administrar proveedores
 5. administrar cobros
+6. administrar usuarios
