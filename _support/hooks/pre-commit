@@ -3,7 +3,7 @@ DBNAME=orders
 # The path relative to the repository root in which to store the sql dump.
 DBPATH=d:\\xampp\\htdocs\\orders\\_support\\
 
-d:\\xampp\\mysql\\bin\\mysqldump -u root $DBNAME > $DBPATH/$DBNAME.sql
+d:\\xampp\\mysql\\bin\\mysqldump -u root --skip-comments  $DBNAME > $DBPATH/$DBNAME.sql
  
 git add $DBPATH/$DBNAME.sql
 exit 0
