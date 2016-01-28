@@ -1,5 +1,4 @@
 #!/bin/sh
-
 #NOMBRE Y RUTA DE BASE DE DATOS
 db="orders"
 path="d:\\xampp\\htdocs\\orders\\_support\\orders.sql"

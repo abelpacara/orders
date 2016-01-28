@@ -1,5 +1,4 @@
 #!/bin/sh
-
 DBNAME=orders
 # The path relative to the repository root in which to store the sql dump.
 DBPATH=d:\\xampp\\htdocs\\orders\\_support\\
