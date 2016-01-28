@@ -1,3 +1,4 @@
-1. registrar pedido
-2. registrar producto
-3. registrar inventario de producto
+1. administrar pedidos
+2. administrar productos
+3. administrar inventario de producto
+4. administrar proveedores
