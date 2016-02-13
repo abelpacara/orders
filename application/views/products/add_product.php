@@ -1,13 +1,3 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-?><!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Agregar Producto</title>
-</head>
-<body>
-
 <div id="container">
 	<h1>Agregar Producto</h1>
 	<?php
@@ -30,8 +20,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</td>
 		</tr>
 		<tr>
-			<td>
-				<input type="submit" name="btn_save" value="Agregar Producto"/>				
+			<td>				
+				<button type="submit" name="btn_save" class="btn btn-default">Agregar Producto</button>				
 			</td>
 		</tr>
 	</table>
@@ -59,5 +49,3 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		?>
 	</table>
 </div>
-</body>
-</html>

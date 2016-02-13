@@ -11,9 +11,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div id="container">
 	<h1>Agregar Inventario de Productos</h1>	
 	<?php
-	echo form_open_multipart("orders/add_to_order");
+	echo form_open_multipart("orders/add_to_inventory");
 	?>
-	<input type="hidden" name="availables_maximum" value="<?php echo count($list_inventory)?>"/>
+	<input type="hidden" name="availables_maximum" value="<?php echo count($list_inventories)?>"/>
 	<table>
 		<tr>
 			<th>#</th>
@@ -24,16 +24,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<th>Cantidad</th>
 		</tr>
 		<?php
-		for($i=0; $i<count($list_inventory); $i++)
+		for($i=0; $i<count($list_inventories); $i++)
 		{?>
 			<tr>
 				<td><?php echo ($i+1) ?></td>
-				<td><?php echo $list_inventory[$i]['product_code']?></td>
-				<td><?php echo $list_inventory[$i]['product_name']?></td>
-				<td><?php echo $list_inventory[$i]['inventory_last_date']?></td>
-				<td><?php echo $list_inventory[$i]['inventory_quantity']?></td>
+				<td><?php echo $list_inventories[$i]['product_code']?></td>
+				<td><?php echo $list_inventories[$i]['product_name']?></td>
+				<td><?php echo $list_inventories[$i]['inventory_last_date']?></td>
+				<td><?php echo $list_inventories[$i]['inventory_quantity']?></td>
 				<td>
-					<input type="hidden" name="id_product_<?php echo $i?>" value="<?php echo $list_inventory[$i]['id_product']?>"/>
+					<input type="hidden" name="product_id_<?php echo $i?>" value="<?php echo $list_inventories[$i]['id_product']?>"/>
 					<input type="text" name="inventory_quantity_<?php echo $i?>"/>
 				</td>
 			</tr>
